@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: "#354f52",
         secondary: "#52796f",
-        accent: "#84a94c",
+        accent: "#4b9a8f",
       },
       fontFamily: {
         gentium: ["Gentium Plus ", "sans"],

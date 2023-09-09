@@ -38,15 +38,15 @@ export const links = [
 
 export const social = [
   {
-    icon: <FiInstagram className="w-5 h-5" />,
+    icon: <FiInstagram className="w-5 h-5 social" />,
     href: "",
   },
   {
-    icon: <FiTwitter className="w-5 h-5" />,
+    icon: <FiTwitter className="w-5 h-5 social" />,
     href: "",
   },
   {
-    icon: <FiGithub className="w-5 h-5" />,
+    icon: <FiGithub className="w-5 h-5 social" />,
     href: "",
   },
 ];
