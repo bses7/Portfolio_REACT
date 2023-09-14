@@ -124,7 +124,7 @@ html{
   font-size: 3rem;
   opacity:0;
   animation: fadeInOut 3s ease-in-out infinite;
-  color: #5CAAA0;
+  color: #4B998F;
 }
 .link{
   margin-top: 20px;
@@ -208,7 +208,7 @@ link a:hover{
 }
 
 .circle::after{
-  content: "";
+  content: '';
   position:absolute;
   background-color: #ebe6ff;
   inset: 10px;
@@ -222,6 +222,7 @@ link a:hover{
   border: 6px solid #000;
   z-index:3;
   border-radius: 50%;
+  display:flex;
   align-items: center;
   overflow: hidden;
   flex-direction: column;
@@ -246,6 +247,7 @@ link a:hover{
   letter-spacing:2px;
   text-transform: uppercase;
   padding: 10px 0;
+  transform: translateY(100px);
 }
 .content h2 span{
   display:block;
@@ -257,23 +259,26 @@ link a:hover{
   position: relative;
   background-color: #222;
   color:#fff;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition:0.5s;
+  transform: translateY(100px);
 }
 .content a:hover{
   letter-spacing: 3px;
 }
-.cirlce:hover::before{
+.circle:hover::before{
   inset: -20px 0px;
 }
-circle:hover img{
+.circle:hover img{
   opacity:0;
 }
+
+
 @keyframes slideUp {
   0% {
     transform: translateY(500px)
@@ -352,4 +357,5 @@ circle:hover img{
   .text-wrapper p{
     width:290px;
   }
+  
 }
