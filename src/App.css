@@ -58,6 +58,7 @@ html{
   --circ-bg:#999;
   --sc-clr: #007777;
   --div-clr:#ebe6ff;
+  --logo-lg:url('./images/logo1.svg');
   background:#ebe6ff;
 }
 .dark-theme{
@@ -72,6 +73,7 @@ html{
   --btnh2-bg:#E5E7EB;
   --circ-clr:white;
   --div-clr:#3d8070;
+  --logo-lg:url('./images/logo2.svg');
 }
 .nav_list{
   color: var(--main-heading);
@@ -350,16 +352,15 @@ link a:hover{
 }
 
 @media screen and (max-width: 780px){
-  .home{
-    flex-direction: column-reverse;
-    justify-content:space-around;
-    line-height:0.8;
-  }
-  .home-content{
-    align-items:flex-start;
-  }
+  
   .text-wrapper p{
     width:290px;
+    transform: translateX(35%);
+  }
+  .circle{
+    width:300px;
+    height:300px;
+    transform: translate(15%, 10%);
   }
   
 }

@@ -29,10 +29,10 @@ const About = () => {
               <p className="mb-4 text-accent mt-24">Freelancer</p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8 text-[var(--sub-heading)]">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
-                veniam est culpa numquam quod, cumque laudantium repellat. Ut,
-                illo adipisci laborum culpa tempora distinctio voluptatibus!{" "}
-                <br />
+                I'm a student at Sunway College with a strong passion for tech.
+                I've honed my skills in Python web development, React, and data
+                analysis. Currently, I'm also working as a freelancer, applying
+                my skills to real-world projects. <br />
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
                 incidunt. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Eveniet, veritatis.

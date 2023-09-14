@@ -44,7 +44,7 @@ const Navmobile = () => {
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
-        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
+        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0 z-50"
       ></motion.div>
 
       <motion.ul
@@ -52,8 +52,8 @@ const Navmobile = () => {
         initial="hidden"
         animate={isOpen ? "visible" : ""}
         className={`${
-          isOpen ? "right-0" : "-right-full"
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
+          isOpen ? "right-0 z-50" : "-right-full"
+        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300`}
       >
         <div
           className="cursor-pointer absolute top-8 right-8"
@@ -61,21 +61,24 @@ const Navmobile = () => {
         >
           <XMarkIcon className="w-8 h-8" />
         </div>
-        {links.map((item, index) => {
-          return (
-            <li key={index} className="mb-8">
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="text-xl cursor-pointer capitalize"
-              >
-                {item.label}
-              </Link>
-            </li>
-          );
-        })}
+        <div className="overflow-hidden">
+          {" "}
+          {links.map((item, index) => {
+            return (
+              <li key={index} className="mb-8">
+                <Link
+                  to={item.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className="text-xl cursor-pointer capitalize"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
+        </div>
       </motion.ul>
     </nav>
   );

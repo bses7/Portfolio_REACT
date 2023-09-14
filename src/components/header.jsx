@@ -40,7 +40,7 @@ const Header = () => {
           <Social className="" />
         </div>
         <div className="lg:hidden">
-          <Navmobile />
+          <Navmobile className="z-10" />
         </div>
         <div className="gap-4 hidden lg:flex mr-[8px]">
           <Darkmode className="" />

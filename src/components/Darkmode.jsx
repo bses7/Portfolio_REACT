@@ -6,6 +6,7 @@ import { ReactComponent as Moon } from "../images/Moon.svg";
 
 const Darkmode = () => {
   const [theme, setTheme] = useState("light-theme");
+
   const toggleTheme = () => {
     if (theme === "dark-theme") {
       setTheme("light-theme");
