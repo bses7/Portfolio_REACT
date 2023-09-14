@@ -13,6 +13,12 @@ import {
   FiTwitter,
 } from "react-icons/fi";
 
+import {
+  LightBulbIcon,
+  BriefcaseIcon,
+  ChatBubbleLeftEllipsisIcon,
+} from "@heroicons/react/24/outline";
+
 export const links = [
   {
     label: "Home",
@@ -50,3 +56,25 @@ export const social = [
     href: "",
   },
 ];
+
+const about_divs = [
+  {
+    title: "Experience",
+    icon: <LightBulbIcon className="w-16 h-16 text-[var(--sc-clr)] mb-2" />,
+    text: "1+ years",
+  },
+  {
+    title: "Completed",
+    icon: <BriefcaseIcon className="w-16 h-16 text-[var(--circ-clr)] mb-2" />,
+    text: "10+",
+  },
+  {
+    title: "Support",
+    icon: (
+      <ChatBubbleLeftEllipsisIcon className="w-16 h-16 text-[var(--sc-clr)] mb-2" />
+    ),
+    text: "24/7",
+  },
+];
+
+export default about_divs;

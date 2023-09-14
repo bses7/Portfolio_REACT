@@ -29,7 +29,7 @@ const Home = () => {
               <div className="text-wrapper">
                 <p className="creative text-2xl font-bold mt-[4px] leading-tight ">
                   Creative{" "}
-                  <span className="items text-3xl opacity-0 ">
+                  <span className="items text-10xl opacity-0 ">
                     {" "}
                     {field[inuse]}
                   </span>
