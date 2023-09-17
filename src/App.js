@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Skills from "./pages/skills";
+import Services from "./pages/services";
 import { links } from "./data";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Services />
     </div>
   );
 }

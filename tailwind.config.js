@@ -7,6 +7,7 @@ module.exports = {
         primary: "#354f52",
         secondary: "#52796f",
         accent: "#4b9a8f",
+        background_alpha: "rgba(0, 0, 0, 0.5)",
       },
       fontFamily: {
         gentium: ["Gentium Plus ", "sans"],
