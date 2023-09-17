@@ -284,6 +284,29 @@ link a:hover{
   opacity:0;
 }
 
+@-webkit-keyframes showText{
+  100%{
+    opacity:1;
+  }
+}
+@keyframes showText{
+  100%{
+    opacity:1;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.animate-progress {
+  animation: progress 1s ease-in-out;
+}
+
 
 @keyframes slideUp {
   0% {

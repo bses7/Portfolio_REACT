@@ -15,7 +15,10 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="home flex justify-center items-center overflow-hidden leading-normal h-screen ">
+    <section
+      id="home"
+      className="home flex justify-center items-center overflow-hidden leading-normal h-screen "
+    >
       <div className="container ml-[12%] ">
         <div className="flex flex-col-reverse lg:flex-row">
           <div className="w-1/2 md:w-1/2">

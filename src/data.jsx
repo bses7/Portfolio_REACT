@@ -22,23 +22,23 @@ import {
 export const links = [
   {
     label: "Home",
-    to: "/",
+    to: "home",
   },
   {
     label: "About",
-    to: "/about",
+    to: "about",
   },
   {
     label: "Skills",
-    to: "/skills",
+    to: "skills",
   },
   {
     label: "Blogs",
-    to: "/blogs",
+    to: "blogs",
   },
   {
     label: "Portfolio",
-    to: "/portfolio",
+    to: "portfolio",
   },
 ];
 
@@ -78,3 +78,46 @@ const about_divs = [
 ];
 
 export default about_divs;
+
+export const skill_card = [
+  {
+    title: "Python Programming",
+    percent: "85%",
+  },
+  {
+    title: "Data Structures and Algorithms",
+    percent: "70%",
+  },
+  {
+    title: "Web Development",
+    percent: " 80%",
+  },
+  {
+    title: "Data Analysis",
+    percent: "75%",
+  },
+  {
+    title: "Data Visualization",
+    percent: "70%",
+  },
+  {
+    title: "React",
+    percent: "80%",
+  },
+  {
+    title: "Front-End Development",
+    percent: "75%",
+  },
+  {
+    title: "Database Management",
+    percent: "70%",
+  },
+  {
+    title: "User Interface (UI) Design",
+    percent: "60%",
+  },
+  {
+    title: "Project Management",
+    percent: "65%",
+  },
+];
