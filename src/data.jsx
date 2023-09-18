@@ -17,6 +17,9 @@ import {
   LightBulbIcon,
   BriefcaseIcon,
   ChatBubbleLeftEllipsisIcon,
+  CommandLineIcon,
+  ComputerDesktopIcon,
+  CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 
 export const links = [
@@ -119,5 +122,44 @@ export const skill_card = [
   {
     title: "Project Management",
     percent: "65%",
+  },
+];
+
+export const Services_Card = [
+  {
+    title: "Product",
+    subtitle: "Designer",
+    desc: "Service with more than 3 years of experience. Providing quality work to clients and companies",
+    offer1: "UI/UX design",
+    offer2: "Engaging user interfaces",
+    offer3: "Customized visual elements",
+    offer4: "Branding & logo design",
+    icon: (
+      <ComputerDesktopIcon className="block text-[2rem] text-accent mb-4 w-12 h-12 mt-[30%]" />
+    ),
+  },
+  {
+    title: "Web Development",
+    subtitle: "Developer",
+    desc: "Experienced web developer with expertise in modern web technologies",
+    offer1: "Responsive websites",
+    offer2: "Front-end development",
+    offer3: "Back-end solutions",
+    offer4: "Maintenance & support",
+    icon: (
+      <CodeBracketIcon className="block text-[2rem] text-accent mb-4 w-12 h-12 mt-[30%]" />
+    ),
+  },
+  {
+    title: "Python Programming",
+    subtitle: "Developer",
+    desc: "Experienced Python developer offering a wide range of programming services",
+    offer1: "Clean & efficient Python code",
+    offer2: "Web development (Django & Flask)",
+    offer3: "Automation & scripting",
+    offer4: "Data analysis & visualization",
+    icon: (
+      <CommandLineIcon className="block text-[2rem] text-accent mb-4 w-12 h-12 mt-[30%]" />
+    ),
   },
 ];

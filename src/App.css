@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -296,18 +297,24 @@ link a:hover{
 }
 @keyframes progress {
   0% {
-    width: 0;
+    background-position: 200% 0;
   }
   100% {
-    width: 90%;
+    background-position: -200% 0;
   }
-}
+  }
+
 
 .animate-progress {
-  animation: progress 1s ease-in-out;
+  background: linear-gradient(to right, #00cccc, #007777); 
+  background-size: 200% 100%;
+  animation: progress 15s ease-in-out infinite alternate;
 }
 
-
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 @keyframes slideUp {
   0% {
     transform: translateY(500px)
