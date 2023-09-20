@@ -11,13 +11,31 @@ import { links } from "../data";
 import Navmobile from "./Navmobile";
 import logo1 from "../images/logo1.svg";
 import Darkmode from "../components/Darkmode";
+import logo2 from "../images/logo2.svg";
 
 const Header = ({ links }) => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+  const logoStyle = {
+    "--logo-lg": isDarkMode
+      ? 'url("./images/logo2.svg")'
+      : 'url("./images/logo1.svg")',
+  };
   return (
-    <header className="head container mx-auto px-4 lg:px-0 w-full text-black z-10 transition-all duration-300">
+    <header
+      className={`head container mx-auto px-4 lg:px-0 w-full text-black z-10 transition-all duration-300 `}
+    >
       <nav className="flex justify-between py-7">
         <ScrollLink className="font-sans" to="/">
-          <img src={logo1} alt="" className="w-[280px] h-[200px] my-[-70px]" />
+          <img
+            src="placeholder" // Add a placeholder source for the image
+            alt=""
+            className="w-[280px] h-[200px] my-[-70px]"
+            style={logoStyle} // Apply the style object here
+          />
         </ScrollLink>
         <div className="nav_list gap-12 hidden lg:flex mr-[5%] mt-[1%] font-gentium ">
           {links.map((link, index) => (
@@ -44,7 +62,7 @@ const Header = ({ links }) => {
           <Navmobile className="z-10" />
         </div>
         <div className="gap-4 hidden lg:flex mr-[8px]">
-          <Darkmode className="" />
+          <Darkmode />
         </div>
       </nav>
     </header>

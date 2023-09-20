@@ -25,7 +25,7 @@ const Home = () => {
             <div className="home-content mb-10">
               <div className="home-title">
                 <h2 className="mb-4 mt-[20px] leading-loose">Hey, I'm</h2>
-                <h1 className="text-10xl font-bold ml-[8px] mt-[16px] leading-tight">
+                <h1 className="text-10xl font-bold ml-[8px] lg:mt-[16px] mt-[8px] leading-none">
                   Bishesh
                 </h1>
               </div>
@@ -39,7 +39,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="link flex justify-start items-center text-lg font-bold ">
-                <div class="flex flex-col ml-[50%] md:flex-row justify-center gap-2 md:ml-[10%] mt-[20px]">
+                <div class="flex flex-col ml-[50%] md:flex-row justify-center lg:gap-2 gap-0 md:ml-[10%] mt-[20px]">
                   <button class="flex btn-1 w-full md:w-auto px-6 py-3 bg-black text-white text-lg hover:bg-gray-800 rounded-lg mb-2 md:mb-0 md:mr-2 transition-all duration-400">
                     Download CV
                   </button>

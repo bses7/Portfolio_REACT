@@ -37,7 +37,10 @@ const Navmobile = () => {
   };
   return (
     <nav className="relative">
-      <div onClick={() => setIsOpen(true)} className="cursor-pointer">
+      <div
+        onClick={() => setIsOpen(true)}
+        className="cursor-pointer fixed right-4 z-10"
+      >
         <Bars3Icon className="w-10 h-10" />
       </div>
       <motion.div

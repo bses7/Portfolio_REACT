@@ -8,7 +8,7 @@ import {
 
 const About = () => {
   return (
-    <section className="section" id="about">
+    <section className="section lg:mt-[4%] " id="about">
       <div className="container mx-auto mt-12">
         <div className="flex flex-col xl:flex-row gap-24">
           <div className="about-img relative after:content-[''] after:absolute after:left-0 after:top-0 after:origin-center after:rotate-[5deg] after:w-[100%] after:h-[50%] after:bg-[var(--sub-heading)]">
@@ -30,11 +30,12 @@ const About = () => {
               <hr className="mb-8 opacity-5" />
               <p className="mb-8 text-[var(--sub-heading)]">
                 I'm a student at Sunway College with a strong passion for tech.
-                I've honed my skills in Python web development, React, and data
-                analysis. Currently, I'm also working as a freelancer, applying
-                my skills to real-world projects. <br /> <br />I explore AI,
-                blockchain, and cloud tech, staying updated with trends. With
-                problem-solving expertise, I aim to impact tech innovatively.
+                I've cultivated mt proficiency in Python, Web development,
+                React, and Data analysis. Currently, I'm also working as a
+                freelancer, applying my skills to real-world projects. <br />{" "}
+                <br />I explore AI and cloud tech, staying updated with trends.
+                With problem-solving expertise, I aim to impact tech
+                innovatively.
                 <br />
                 <br />
                 With a keen eye for problem-solving and a dedication to

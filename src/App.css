@@ -49,7 +49,7 @@ html{
 .light-theme{
   --main-heading:#333333 ;
   --sub-heading:#333;
-  --para-clr: #ebe6ff;
+  --para-clr: #f1edff;
   --btn-bg-color: #7ac8c1;
   --btn-text-clr: #fff
   --bg-clr: black;
@@ -60,7 +60,8 @@ html{
   --sc-clr: #007777;
   --div-clr:#ebe6ff;
   --logo-lg:url('./images/logo1.svg');
-  background:#ebe6ff;
+  --skill-heading:#15295f;
+  background:#f1edff;
 }
 .dark-theme{
   --main-heading: #F5F5F5;
@@ -75,6 +76,7 @@ html{
   --circ-clr:white;
   --div-clr:#3d8070;
   --logo-lg:url('./images/logo2.svg');
+  --skill-heading:#F5F5F5;
 }
 .nav_list{
   color: var(--main-heading);
