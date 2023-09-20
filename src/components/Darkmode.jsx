@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { ReactComponent as Sun } from "../images/Sun.svg";
 import { ReactComponent as Moon } from "../images/Moon.svg";
 
-const Darkmode = () => {
-  const [theme, setTheme] = useState("light-theme");
-
+const Darkmode = ({ theme, setTheme }) => {
   const toggleTheme = () => {
     if (theme === "dark-theme") {
       setTheme("light-theme");
@@ -12,13 +10,9 @@ const Darkmode = () => {
       setTheme("dark-theme");
     }
   };
-
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
-
-  document.documentElement.style.setProperty("--logo-lg", logo);
-  }, [theme];
 
   return (
     <section className="lg: flex items-center lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden">
