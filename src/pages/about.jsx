@@ -1,14 +1,9 @@
 import about_divs from "../data";
 import portrait from "../images/portrait.jpg";
-import {
-  LightBulbIcon,
-  BriefcaseIcon,
-  ChatBubbleLeftEllipsisIcon,
-} from "@heroicons/react/24/outline";
 
 const About = () => {
   return (
-    <section className="section lg:mt-[4%] " id="about">
+    <section className="section lg:mt-[4%]" id="about">
       <div className="container mx-auto mt-12">
         <div className="flex flex-col xl:flex-row gap-24">
           <div className="about-img relative after:content-[''] after:absolute after:left-0 after:top-0 after:origin-center after:rotate-[5deg] after:w-[100%] after:h-[50%] after:bg-[var(--sub-heading)]">

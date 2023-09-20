@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3CenterLeftIcon } from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import Social from "./social";
-
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll"; // Import animateScroll
 import { links } from "../data";
 
 const Navmobile = () => {
@@ -35,13 +33,24 @@ const Navmobile = () => {
       },
     },
   };
+
+  const handleLinkClick = (targetId) => {
+    scroll.scrollTo(targetId, {
+      duration: 500,
+      offset: -70,
+      smooth: true,
+    });
+
+    setIsOpen(false);
+  };
+
   return (
     <nav className="relative">
       <div
         onClick={() => setIsOpen(true)}
-        className="cursor-pointer fixed right-4 z-10"
+        className="cursor-pointer right-4 fixed z-10"
       >
-        <Bars3Icon className="w-10 h-10" />
+        <Bars3CenterLeftIcon className="w-10 h-10 text-[var(--main-heading)]" />
       </div>
       <motion.div
         variants={circleVariants}
@@ -71,9 +80,11 @@ const Navmobile = () => {
               <li key={index} className="mb-8">
                 <Link
                   to={item.to}
+                  spy={true}
                   smooth={true}
                   duration={500}
                   offset={-70}
+                  onClick={() => setIsOpen(false)}
                   className="text-xl cursor-pointer capitalize"
                 >
                   {item.label}

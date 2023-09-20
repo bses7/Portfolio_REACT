@@ -59,6 +59,7 @@ html{
   --circ-bg:#999;
   --sc-clr: #007777;
   --div-clr:#ebe6ff;
+  --div2-clr:#ebe6ff;
   --logo-lg:url('./images/logo1.svg');
   --skill-heading:#15295f;
   background:#f1edff;
@@ -75,6 +76,7 @@ html{
   --btnh2-bg:#E5E7EB;
   --circ-clr:white;
   --div-clr:#3d8070;
+  --div2-clr:#4AAE9B;
   --logo-lg:url('./images/logo2.svg');
   --skill-heading:#F5F5F5;
 }

@@ -26,7 +26,7 @@ const Services = () => {
         <div className="flex flex-wrap justify-center lg:gap-[1.8rem] lg:ml-14 ml-12 ">
           {Services_Card.map((item, index) => (
             <div key={index} className="lg:mb-4 w-[80%] lg:w-[30%] mb-2">
-              <div className="services_content relative border-stone-800 lg:p-[2.5rem] p-[1.5rem] shadow-xl mt-12 rounded-2xl bg-[var(--div-clr)] ">
+              <div className="services_content relative border-stone-800 lg:p-[2.5rem] p-[1.5rem] shadow-xl mt-12 rounded-2xl bg-[var(--div-clr)]">
                 <div>
                   {item.icon}
                   <h3 className="services_title text-3xl mb-4 font-500 text-left text-[var(--main-heading)]">

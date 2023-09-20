@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Skills from "./pages/skills";
 import Services from "./pages/services";
 import { links } from "./data";
+import Top from "./components/top";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Services />
+      <Top />
     </div>
   );
 }

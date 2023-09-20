@@ -17,20 +17,20 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="home flex justify-center items-center overflow-hidden leading-normal h-screen "
+      className="home flex justify-center items-center overflow-hidden leading-normal lg:my-0"
     >
       <div className="container ml-[12%] ">
         <div className="flex flex-col-reverse lg:flex-row">
           <div className="w-1/2 md:w-1/2">
             <div className="home-content mb-10">
               <div className="home-title">
-                <h2 className="mb-4 mt-[20px] leading-loose">Hey, I'm</h2>
-                <h1 className="text-10xl font-bold ml-[8px] lg:mt-[16px] mt-[8px] leading-none">
+                <h2 className="mb-4 mt-[10px] leading-loose">Hey, I'm</h2>
+                <h1 className="text-10xl font-bold ml-[8px] lg:mt-[12px] mt-[8px] leading-none">
                   Bishesh
                 </h1>
               </div>
               <div className="text-wrapper">
-                <p className="creative text-2xl font-bold mt-[4px] leading-tight ">
+                <p className="creative text-2xl font-bold mt-[2px] leading-tight ">
                   Creative{" "}
                   <span className="items text-10xl opacity-0 ">
                     {" "}
@@ -39,7 +39,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="link flex justify-start items-center text-lg font-bold ">
-                <div class="flex flex-col ml-[50%] md:flex-row justify-center lg:gap-2 gap-0 md:ml-[10%] mt-[20px]">
+                <div class="flex flex-col ml-[50%] md:flex-row justify-center lg:gap-2 gap-0 md:ml-[10%] mt-[10px]">
                   <button class="flex btn-1 w-full md:w-auto px-6 py-3 bg-black text-white text-lg hover:bg-gray-800 rounded-lg mb-2 md:mb-0 md:mr-2 transition-all duration-400">
                     Download CV
                   </button>
@@ -57,7 +57,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2" id="about">
+          <div className="w-1/2">
             <div className="circle relative w-[450px] h-[450px] bg-[#999] rounded-full overflow-hidden">
               <div className="content absolute inset-30 border-6 border-black z-3 rounded-full flex items-center overflow-hidden flex-col">
                 <img
