@@ -39,19 +39,19 @@ const About = () => {
                 impact in the tech industry.
               </p>
             </div>
-            <div className="flex group flex-col lg:flex-row mt-4 w-[85%] gap-8 text-[var(--main-heading)]">
+            <div className="flex  flex-col lg:flex-row mt-4 w-[85%] gap-8 text-[var(--main-heading)]">
               {about_divs.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex-1 lg:w-1/3 cursor-pointer text-center border rounded-lg bg-[var(--div-clr)] shadow-lg p-4 mb-4 lg:mb-0 hover:bg-[#4b9a8f] hover:text-white transition-all flex flex-col items-center justify-center `}
+                  className={`flex-1 group lg:w-1/3 cursor-pointer text-center border rounded-lg bg-[var(--div-clr)] shadow-lg p-4 mb-4 lg:mb-0 hover:bg-[#4b9a8f] hover:text-white transition-all flex flex-col items-center justify-center `}
                 >
-                  <span className="group-hover:hidden">{item.icon}</span>
+                  <span className="group-hover:invisible">{item.icon}</span>
                   <h3 className="text-lg font-semibold ">{item.title}</h3>
                   <p className="text-sm">{item.text}</p>
                 </div>
               ))}
             </div>
-            <button className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md w-1/4 text-xl">
+            <button className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md lg:w-1/4 text-xl">
               Contact Me
             </button>
           </div>

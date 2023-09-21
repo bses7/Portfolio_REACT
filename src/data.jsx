@@ -22,6 +22,13 @@ import {
   CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 
+import Project1 from "./images/Project1.png";
+import Project2 from "./images/Project2.jpg";
+import Project3 from "./images/Project3.jpg";
+import Project4 from "./images/Project4.jpg";
+import Project5 from "./images/Project5.jpg";
+import Project6 from "./images/Project6.jpg";
+
 export const links = [
   {
     label: "Home",
@@ -89,11 +96,11 @@ export const skill_card = [
   },
   {
     title: "Data Structures and Algorithms",
-    percent: "70%",
+    percent: "80%",
   },
   {
     title: "Web Development",
-    percent: " 80%",
+    percent: " 78%",
   },
   {
     title: "Data Analysis",
@@ -113,7 +120,7 @@ export const skill_card = [
   },
   {
     title: "Database Management",
-    percent: "70%",
+    percent: "50%",
   },
   {
     title: "User Interface (UI) Design",
@@ -121,7 +128,7 @@ export const skill_card = [
   },
   {
     title: "Project Management",
-    percent: "65%",
+    percent: "77%",
   },
 ];
 
@@ -168,26 +175,26 @@ export const projectsData = [
   {
     id: "1",
     image: Project1,
-    name: "project name 1",
-    category: "UI/UX design",
+    name: "Hospital Management System",
+    category: "Python",
   },
   {
     id: "2",
     image: Project2,
-    name: "project name 2",
-    category: "web development",
+    name: "Analysing Netflix Movies",
+    category: "Data Analysis",
   },
   {
     id: "3",
     image: Project3,
-    name: "project name 3",
+    name: "Smart Shopping Trolley",
     category: "UI/UX design",
   },
   {
     id: "4",
     image: Project4,
-    name: "project name 4",
-    category: "branding",
+    name: "Configuring Small LAN (Cisco)",
+    category: "Networking",
   },
   {
     id: "5",
@@ -212,6 +219,9 @@ export const projectsNav = [
   },
   {
     name: "web development",
+  },
+  {
+    name: "Network",
   },
   {
     name: "branding",
