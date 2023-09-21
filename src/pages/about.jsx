@@ -6,24 +6,24 @@ const About = () => {
     <section className="section lg:mt-[4%]" id="about">
       <div className="container mx-auto mt-12">
         <div className="flex flex-col xl:flex-row gap-24">
-          <div className="about-img relative after:content-[''] after:absolute after:left-0 after:top-0 after:origin-center after:rotate-[5deg] after:w-[100%] after:h-[50%] after:bg-[var(--sub-heading)]">
+          <div className="about-img relative after:content-[''] after:absolute after:left-0 after:top-0 after:origin-center after:rotate-[5deg] lg:after:w-[100%] lg:after:h-[50%] after:bg-[var(--sub-heading)]">
             <img
               src={portrait}
               alt=""
-              className="w-full h-1/2 object-cover rounded-[13px] relative z-[3] shadow-3xl lg:mx-0 md:mx-auto "
+              className="lg:w-full h-1/2 w-[80%] mx-auto object-cover rounded-[13px] relative z-[3] shadow-3xl lg:mx-0 md:mx-auto "
             />
           </div>
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="relative">
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold">
                 <span className="absolute text-8xl before:content-['About'] before:text-accent before:opacity-40 before:-top-1 before:hidden before:lg:block z-0"></span>
-                <span className="absolute w-[200px] z-10 text-3xl mt-[48px] text-[var(--main-heading)] ml-[9%]">
+                <span className="lg:absolute relative w-[200px] z-10 text-3xl mt-[48px] text-[var(--main-heading)] lg:ml-[9%]">
                   Bishesh Giri
                 </span>
               </h2>
-              <p className="mb-4 text-accent mt-24">Freelancer</p>
+              <p className="mb-4 text-accent lg:mt-24 mt-4 ">Freelancer</p>
               <hr className="mb-8 opacity-5" />
-              <p className="mb-8 text-[var(--sub-heading)]">
+              <p className="mb-8 text-[var(--sub-heading)] lg:w-full w-[85%] mx-auto">
                 I'm a student at Sunway College with a strong passion for tech.
                 I've cultivated mt proficiency in Python, Web development,
                 React, and Data analysis. Currently, I'm also working as a
@@ -39,7 +39,7 @@ const About = () => {
                 impact in the tech industry.
               </p>
             </div>
-            <div className="flex  flex-col lg:flex-row mt-4 w-[85%] gap-8 text-[var(--main-heading)]">
+            <div className="flex flex-col lg:flex-row mt-4 w-[85%] gap-8 text-[var(--main-heading)]">
               {about_divs.map((item, index) => (
                 <div
                   key={index}

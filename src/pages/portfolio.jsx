@@ -2,7 +2,7 @@ import Projects from "../components/projects";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section">
+    <section id="portfolio" className="section mt-12">
       <div className="container mx-auto">
         <div className="flex flex-col  text-center">
           <div className="relative text-3xl lg:text-8xl font-medium lg:font-extrabold ml-[2%] ">

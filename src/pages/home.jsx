@@ -20,7 +20,7 @@ const Home = () => {
       className="home flex justify-center items-center overflow-hidden leading-normal lg:my-0"
     >
       <div className="container ml-[12%] ">
-        <div className="flex flex-col-reverse lg:flex-row">
+        <div className="flex flex-col-reverse lg:flex-row md:flex-row">
           <div className="w-1/2 md:w-1/2">
             <div className="home-content mb-10">
               <div className="home-title">
@@ -49,7 +49,7 @@ const Home = () => {
                     <RocketLaunchIcon className="w-8 h-8 ml-[10%] " />
                   </button>
                 </div>
-                <div className="scroll relative animate-slide-up-delayed ml-[-27%]">
+                <div className="scroll lg:relative absolute animate-slide-up-delayed lg:ml-[-27%] mb-24 ml-16 ">
                   <a href="#">
                     <span className="absolute mb-[-80px] w-30 h-50 ml-[80px] border-2 border-black rounded-full hover:border-[#fff] transition-all duration-400"></span>
                   </a>

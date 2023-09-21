@@ -17,12 +17,12 @@ const Services = () => {
     <section className="services section mt-8" id="services">
       <div className="relative text-center text-3xl lg:text-8xl font-medium lg:font-extrabold ml-10">
         <span className="absolute before:content-['Services']  before:text-accent before:opacity-40 before:-top-1 before:hidden before:lg:block z-0 inset-0 top-[20%]"></span>
-        <h2 className="secton_title font-extrabold lg:text-3xl text-[var(--main-heading)] mt-[10%] text-capitalize text-center relative z-3">
+        <h2 className="secton_title font-extrabold lg:text-3xl text-[var(--main-heading)] mt-[10%] pb-10 text-capitalize text-center relative z-3">
           What I Offer !!
         </h2>
       </div>
 
-      <div className="container mx-auto mt-[5%]">
+      <div className="container mx-auto mt-[2%]">
         <div className="flex flex-wrap justify-center lg:gap-[1.8rem] lg:ml-14 ml-12 ">
           {Services_Card.map((item, index) => (
             <div key={index} className="lg:mb-4 w-[80%] lg:w-[30%] mb-2">
