@@ -8,6 +8,7 @@ import Services from "./pages/services";
 import { links } from "./data";
 import Top from "./components/top";
 import Portfolio from "./pages/portfolio";
+import Blogs from "./pages/blogs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Services />
       <Portfolio />
+      <Blogs />
       <Top />
     </div>
   );

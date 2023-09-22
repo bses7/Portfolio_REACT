@@ -29,6 +29,10 @@ import Project4 from "./images/Project4.jpg";
 import Project5 from "./images/Project5.jpg";
 import Project6 from "./images/Project6.jpg";
 
+import Blog1 from "./images/Blog1.webp";
+import Blog2 from "./images/Blog2.jpg";
+import Blog3 from "./images/Blog3.jpg";
+
 export const links = [
   {
     label: "Home",
@@ -43,12 +47,12 @@ export const links = [
     to: "skills",
   },
   {
-    label: "Blogs",
-    to: "blogs",
-  },
-  {
     label: "Portfolio",
     to: "portfolio",
+  },
+  {
+    label: "Blogs",
+    to: "blogs",
   },
 ];
 
@@ -225,5 +229,41 @@ export const projectsNav = [
   },
   {
     name: "branding",
+  },
+];
+
+export const BlogsCard = [
+  {
+    image: Blog1,
+    Blogdesc: "Discover the latest trends in web development and design.",
+    Author: "Bishesh ",
+    Blogtitle: "Web Development Trends for 2023 (SAMPLE 1)",
+  },
+  {
+    image: Blog2,
+    Blogdesc: "Learn how to optimize your website for search engines.",
+    Author: "Bishesh",
+    Blogtitle: "SEO Tips for Better Ranking (SAMPLE 2)",
+  },
+  {
+    image: Blog3,
+    Blogdesc: "Explore the world of mobile app development with our experts.",
+    Author: "Bishesh",
+    Blogtitle: "Mobile App Development Best Practices (SAMPLE 3)",
+  },
+];
+
+export const contact = [
+  {
+    icon: <FiMail />,
+    title: "Have a question?",
+    subtitle: "I am here to help you.",
+    description: "Email me at hello@youremail.com",
+  },
+  {
+    icon: <FiMapPin />,
+    title: "Current Location",
+    subtitle: "Bucharest, Romania",
+    description: "Serving clients worldwide",
   },
 ];

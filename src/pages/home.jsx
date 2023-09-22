@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RocketLaunchIcon } from "@heroicons/react/24/outline";
 import { BriefcaseIcon } from "@heroicons/react/24/outline";
-import portrait from "../images/portrait.jpg";
+import port from "../images/port.jpeg";
 const Home = () => {
   const [inuse, setInuse] = useState(0);
   const field = ["Designer", "Freelancer", "Developer"];
@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="home flex justify-center items-center overflow-hidden leading-normal lg:my-0"
+      className="home flex justify-center items-center overflow-hidden leading-normal lg:my-0 min-h-screen "
     >
-      <div className="container ml-[12%] ">
+      <div className="container ml-[12%] lg:mt-[-5%] ">
         <div className="flex flex-col-reverse lg:flex-row md:flex-row">
           <div className="w-1/2 md:w-1/2">
             <div className="home-content mb-10">
@@ -61,13 +61,13 @@ const Home = () => {
             <div className="circle relative w-[450px] h-[450px] bg-[#999] rounded-full overflow-hidden">
               <div className="content absolute inset-30 border-6 border-black z-3 rounded-full flex items-center overflow-hidden flex-col">
                 <img
-                  src={portrait}
+                  src={port}
                   alt=""
-                  className="absolute top-0 left-0 w-full h-full bg-cover"
+                  className="absolute top-0 left-0 w-full object-cover h-full bg-cover"
                 />
                 <h2 className="relative text-center text-lg font-semibold uppercase py-10 leading-tight">
                   Bishesh
-                  <br /> <span></span> Web Developer
+                  <br /> <span></span> "A Canvas of Infinite Imagination"
                 </h2>
                 <a
                   href="#contact"
