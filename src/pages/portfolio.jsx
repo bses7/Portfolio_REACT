@@ -2,7 +2,7 @@ import Projects from "../components/projects";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section mt-12">
+    <section id="portfolio" className="section mt-12 min-h-screen">
       <div className="container mx-auto">
         <div className="flex flex-col  text-center">
           <div className="relative text-3xl lg:text-8xl font-medium lg:font-extrabold ml-[2%] ">
@@ -11,7 +11,7 @@ const Portfolio = () => {
               My Latest Works
             </h2>
           </div>
-          <p className="subtitle mt-10 lg:w-1/2 w-[400px] lg:text-center mx-auto">
+          <p className="subtitle mt-10 lg:w-1/2 w-[400px] lg:text-center mx-auto text-[var(--sub-heading)]">
             {" "}
             My latest work serves as a testament to my journey of progress and
             achievement. It embodies fresh and innovative ideas, showcases

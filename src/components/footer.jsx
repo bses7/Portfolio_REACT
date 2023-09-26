@@ -22,7 +22,9 @@ const Footer = () => {
           <div>
             <img src={FiLogOut} alt="" />
           </div>
-          <p>&copy; 2023 Bishesh Giri. All rights reserved.</p>
+          <p className="text-[var(--sub-heading)]">
+            &copy; 2023 Bishesh Giri. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

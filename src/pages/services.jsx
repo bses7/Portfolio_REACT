@@ -14,7 +14,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services section mt-8" id="services">
+    <section className="services section mt-8 min-h-screen" id="services">
       <div className="relative text-center text-3xl lg:text-8xl font-medium lg:font-extrabold ml-10">
         <span className="absolute before:content-['Services']  before:text-accent before:opacity-40 before:-top-1 before:hidden before:lg:block z-0 inset-0 top-[20%]"></span>
         <h2 className="secton_title font-extrabold lg:text-3xl text-[var(--main-heading)] mt-[10%] pb-10 text-capitalize text-center relative z-3">
@@ -28,7 +28,7 @@ const Services = () => {
             <div key={index} className="lg:mb-4 w-[80%] lg:w-[30%] mb-2">
               <div className="services_content relative border-stone-800 lg:p-[2.5rem] p-[1.5rem] shadow-xl mt-12 rounded-2xl bg-[var(--div-clr)]">
                 <div>
-                  {item.icon}
+                  <span className="text-[var(--sc-clr)]">{item.icon}</span>
                   <h3 className="services_title text-3xl mb-4 font-500 text-left text-[var(--main-heading)]">
                     {item.title} <br /> {item.subtitle}
                   </h3>

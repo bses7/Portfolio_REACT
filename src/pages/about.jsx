@@ -3,7 +3,7 @@ import portrait from "../images/portrait.jpg";
 
 const About = () => {
   return (
-    <section className="section" id="about">
+    <section className="section min-h-screen" id="about">
       <div className="container mx-auto mt-12">
         <div className="flex flex-col xl:flex-row gap-24 ">
           <div className="about-img relative after:content-[''] after:absolute after:left-0 after:top-0 after:origin-center after:rotate-[5deg] lg:after:w-[75%] lg:after:h-[60%] after:w-[60%] after:h-[100%] lg:after:ml-auto after:ml-24 after:bg-[var(--sub-heading)]">

@@ -55,7 +55,7 @@ const Projects = () => {
             <li className="relative cursor-pointer group">
               <div
                 onClick={toggleDropdown}
-                className="cursor-pointer capitalize m-4 hover:text-accent font-semibold lg:text-lg text-[var(--main-heading)] text-center flex items-center"
+                className="cursor-pointer capitalize m-4 hover:text-accent font-semibold lg:text-lg text-[var(--sub-heading)] text-center flex items-center"
               >
                 More Categories
                 <FaAngleDown

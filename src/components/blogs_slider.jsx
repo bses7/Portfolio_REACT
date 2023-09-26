@@ -31,12 +31,14 @@ const BlogsSlider = () => {
                   />
                 </div>
                 <div className="flex flex-col max-w-3xl">
-                  <h5 className="text-2xl lg:mb-8 mb-4 lg:w-full mx-auto w-[300px] lg:mt-8 mt-[-15%] italic font-normal">
+                  <h5 className="text-2xl lg:mb-8 mb-4 lg:w-full mx-auto w-[300px] lg:mt-8 mt-[-15%] italic font-normal text-[var(--main-heading)]">
                     {item.Blogdesc}
                   </h5>
                   <div>
                     <p className="text-lg text-accent">{item.Author}</p>
-                    <p>{item.Blogtitle}</p>
+                    <p className="text-[var(--sub-heading)]">
+                      {item.Blogtitle}
+                    </p>
                   </div>
                 </div>
               </div>

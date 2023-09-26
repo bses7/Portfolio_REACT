@@ -137,6 +137,24 @@ export const skill_card = [
   },
 ];
 
+export const softSkillsData = [
+  {
+    title: "Communication",
+    description: "Effective communication and collaboration.",
+    additionalInfo: "Enhances teamwork",
+  },
+  {
+    title: "Problem Solving",
+    description: "Creative problem-solving skills.",
+    additionalInfo: "Critical thinker",
+  },
+  {
+    title: "Adaptability",
+    description: "Quickly adapts to change and thrives.",
+    additionalInfo: "Embraces challenges",
+  },
+];
+
 export const Services_Card = [
   {
     title: "Creative Product",

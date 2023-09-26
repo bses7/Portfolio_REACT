@@ -2,7 +2,7 @@ import BlogsSlider from "../components/blogs_slider";
 
 const Blogs = () => {
   return (
-    <section className="section lg:mt-12 mt-4" id="blogs">
+    <section className="section lg:mt-12 mt-4 min-h-screen" id="blogs">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <div className="relative text-3xl lg:text-8xl font-medium lg:font-extrabold  ">
@@ -11,7 +11,7 @@ const Blogs = () => {
               My Latest Blogs
             </h2>
           </div>
-          <p className="lg:mt-20 mt-10 lg:w-[550px] w-[450px] mx-auto mb-12">
+          <p className="lg:mt-20 mt-10 lg:w-[550px] w-[450px] mx-auto mb-12 text-[var(--sub-heading)]">
             Explore my latest blog posts for insightful articles, helpful tips,
             and engaging stories. Discover a wealth of knowledge and inspiration
             in diverse range of topics. Stay informed and inspired with my blogs

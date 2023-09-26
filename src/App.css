@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+::-webkit-scrollbar{
+  width:1.2rem;
+}
+::-webkit-scrollbar-track{
+  background: var(--para-clr);
+
+}
+::-webkit-scrollbar-thumb{
+  background:var(--sub-heading);
+  border: 5px solid transparent;
+  border-radius:12px;
+  background-clip: content-box;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -295,11 +308,13 @@ link a:hover{
     opacity:1;
   }
 }
+
 @keyframes showText{
   100%{
     opacity:1;
   }
 }
+
 @keyframes progress {
   0% {
     background-position: 200% 0;
@@ -320,6 +335,31 @@ link a:hover{
   opacity: 1;
   visibility: visible;
 }
+
+.water:before{
+    border-radius: 45%;
+    background:white;
+    animation:wave 5s linear infinite;
+}
+.water:after{
+    border-radius: 35%;
+    background:rgba(255,255,255,.3);
+    animation:wave 5s linear infinite;
+}
+@keyframes wave{
+    0%{
+        transform: translate(-50%, -50%) rotate(0);
+        top: -30%;
+    }
+    50%{
+    	top: -50%;
+    }
+    100%{
+        transform: translate(-50%, -50%)  rotate(360deg);
+        top: -30%;
+    }
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(500px)

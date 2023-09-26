@@ -2,7 +2,7 @@ import { contact } from "../data";
 
 const Contact = () => {
   return (
-    <section className="section" id="contact">
+    <section className="section min-h-screen" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold">
@@ -11,7 +11,7 @@ const Contact = () => {
               Reach Out To Me!!
             </span>
           </h2>
-          <p className="subtitle lg:mt-14 mt-8 text-center w-[60%]">
+          <p className="subtitle lg:mt-14 mt-8 text-center w-[60%] text-[var(--sub-heading)]">
             Reach out to me today. I'm here to answer your questions, discuss
             collaborations, and assist with any inquiries. Don't hesitate to get
             in touch!{" "}
@@ -32,8 +32,12 @@ const Contact = () => {
                       {icon}{" "}
                     </div>
                     <div className="w-[450px]">
-                      <h2 className="font-body text-xl mb-1">{title}</h2>
-                      <p className="mb-1 ">{subtitle}</p>
+                      <h2 className="font-body text-xl mb-1 text-[var(--main-heading)]">
+                        {title}
+                      </h2>
+                      <p className="mb-1 text-[var(--sub-heading)] ">
+                        {subtitle}
+                      </p>
                       <p className="text-accent font-normal">{description}</p>
                     </div>
                   </div>
@@ -45,23 +49,23 @@ const Contact = () => {
             <form className="space-y-8 w-[90%] mx-auto">
               <div className="flex flex-col lg:flex-row gap-8 ">
                 <input
-                  className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 focus:border-teal-500 focus:ring-teal-500 text-center"
+                  className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 focus:border-teal-500 focus:ring-teal-500 text-center lg:text-left "
                   type="text"
                   placeholder="Your Name"
                 />
                 <input
-                  className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 text-center"
+                  className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 lg:text-left text-center"
                   type="email"
                   placeholder="Your Email"
                 />
               </div>
               <input
                 type="text"
-                className="input w-full py-4 placeholder-gray-500 lg:pl-4 text-center"
+                className="input w-full py-4 placeholder-gray-500 lg:pl-4 text-center lg:text-left"
                 placeholder="Subject"
               />
               <textarea
-                className="textarea w-full py-16 placeholder-gray-500 lg:pl-4 text-center"
+                className="textarea w-full py-16 placeholder-gray-500 lg:pl-4 text-center lg:text-left"
                 placeholder="Your Message"
               ></textarea>
             </form>
