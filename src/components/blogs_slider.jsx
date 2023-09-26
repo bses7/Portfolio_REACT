@@ -17,12 +17,12 @@ const BlogsSlider = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination]}
-        className="mySwiper"
+        className="mySwiper lg:h-[300px] h-[400px] mx-auto"
       >
         {BlogsCard.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="flex flex-col lg:flex-row gap-0 lg:gap-32 ml-20 ">
+              <div className="flex flex-col lg:flex-row gap-0 lg:gap-32 lg:ml-20 ">
                 <div className="lg:w-[328px] lg:h-[328px] lg:mx-0 mx-auto w-64 h-64">
                   <img
                     className="rounded-2xl object-cover "

@@ -9,6 +9,8 @@ import { links } from "./data";
 import Top from "./components/top";
 import Portfolio from "./pages/portfolio";
 import Blogs from "./pages/blogs";
+import Contact from "./pages/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Services />
       <Portfolio />
       <Blogs />
+      <Contact />
+      <Footer />
       <Top />
     </div>
   );

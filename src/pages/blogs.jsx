@@ -11,7 +11,7 @@ const Blogs = () => {
               My Latest Blogs
             </h2>
           </div>
-          <p className="lg:mt-20 mt-10 w-[450px] mx-auto mb-12">
+          <p className="lg:mt-20 mt-10 lg:w-[550px] w-[450px] mx-auto mb-12">
             Explore my latest blog posts for insightful articles, helpful tips,
             and engaging stories. Discover a wealth of knowledge and inspiration
             in diverse range of topics. Stay informed and inspired with my blogs

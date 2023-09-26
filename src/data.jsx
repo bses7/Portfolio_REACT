@@ -11,6 +11,7 @@ import {
   FiMapPin,
   FiLinkedin,
   FiTwitter,
+  FiPhone,
 } from "react-icons/fi";
 
 import {
@@ -225,10 +226,13 @@ export const projectsNav = [
     name: "web development",
   },
   {
-    name: "Network",
+    name: "Networking",
   },
   {
-    name: "branding",
+    name: "Branding",
+  },
+  {
+    name: "Python",
   },
 ];
 
@@ -255,15 +259,21 @@ export const BlogsCard = [
 
 export const contact = [
   {
-    icon: <FiMail />,
+    icon: <FiPhone />,
     title: "Have a question?",
-    subtitle: "I am here to help you.",
-    description: "Email me at hello@youremail.com",
+    subtitle: "Feel free to reach out.",
+    description: "You can call me at +977 9849839647",
   },
   {
     icon: <FiMapPin />,
-    title: "Current Location",
-    subtitle: "Bucharest, Romania",
-    description: "Serving clients worldwide",
+    title: "Current Address",
+    subtitle: "Kathmandu, Nepal",
+    description: "Visit me at Chabahil, Nepal",
+  },
+  {
+    icon: <FiMail />,
+    title: "Email Support",
+    subtitle: "Contact us via email.",
+    description: "Send your inquiries to bishesh.giri8848@gmail.com",
   },
 ];
