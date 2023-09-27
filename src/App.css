@@ -338,7 +338,7 @@ link a:hover{
 
 .water:before{
     border-radius: 45%;
-    background:white;
+    background:#ebe6ff;
     animation:wave 5s linear infinite;
 }
 .water:after{
@@ -439,3 +439,30 @@ link a:hover{
   }
   
 }
+
+.animate .absolute:nth-child(1) {
+  animation: moveCircleA 1s ease-in-out forwards;
+}
+
+.animate .absolute:nth-child(2) {
+  animation: moveCircleB 1s ease-in-out forwards;
+}
+
+@keyframes moveCircleA {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveCircleB {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+

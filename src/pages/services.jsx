@@ -14,7 +14,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services section mt-8 min-h-screen" id="services">
+    <section className="services section min-h-[300px]" id="services">
       <div className="relative text-center text-3xl lg:text-8xl font-medium lg:font-extrabold ml-10">
         <span className="absolute before:content-['Services']  before:text-accent before:opacity-40 before:-top-1 before:hidden before:lg:block z-0 inset-0 top-[20%]"></span>
         <h2 className="secton_title font-extrabold lg:text-3xl text-[var(--main-heading)] mt-[10%] pb-10 text-capitalize text-center relative z-3">

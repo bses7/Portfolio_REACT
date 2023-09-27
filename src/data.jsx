@@ -60,7 +60,7 @@ export const links = [
 export const social = [
   {
     icon: <FiInstagram className="w-5 h-5 social" />,
-    href: "",
+    href: "https://www.instagram.com/bses.007/",
   },
   {
     icon: <FiTwitter className="w-5 h-5 social" />,
@@ -68,7 +68,7 @@ export const social = [
   },
   {
     icon: <FiGithub className="w-5 h-5 social" />,
-    href: "",
+    href: "https://github.com/bses7",
   },
 ];
 

@@ -2,7 +2,7 @@ import { contact } from "../data";
 
 const Contact = () => {
   return (
-    <section className="section min-h-screen" id="contact">
+    <section className="section min-h-[700px]" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold">

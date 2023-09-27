@@ -7,10 +7,13 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const BlogsSlider = () => {
   return (
-    <div>
+    <div className="flex justify-center">
+      {" "}
+      {/* Center the component */}
       <Swiper
         pagination={{
           clickable: true,
+          el: ".swiper-pagination", // Set a custom class for pagination
         }}
         autoplay={{
           delay: 4500,
@@ -22,16 +25,16 @@ const BlogsSlider = () => {
         {BlogsCard.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="flex flex-col lg:flex-row gap-0 lg:gap-32 lg:ml-20 ">
+              <div className="flex flex-col lg:flex-row gap-0 lg:gap-32 lg:ml-20">
                 <div className="lg:w-[328px] lg:h-[328px] lg:mx-0 mx-auto w-64 h-64">
                   <img
-                    className="rounded-2xl object-cover "
+                    className="rounded-2xl object-cover"
                     src={item.image}
                     alt=""
                   />
                 </div>
                 <div className="flex flex-col max-w-3xl">
-                  <h5 className="text-2xl lg:mb-8 mb-4 lg:w-full mx-auto w-[300px] lg:mt-8 mt-[-15%] italic font-normal text-[var(--main-heading)]">
+                  <h5 className="text-2xl lg:mb-8 mb-4 lg:w-full mx-auto w-[300px] lg:mt-8 md:mt-2 mt-[-15%] italic font-normal text-[var(--main-heading)]">
                     {item.Blogdesc}
                   </h5>
                   <div>
@@ -45,8 +48,11 @@ const BlogsSlider = () => {
             </SwiperSlide>
           );
         })}
+        <div className="swiper-pagination"></div>{" "}
+        {/* Add a container for pagination */}
       </Swiper>
     </div>
   );
 };
+
 export default BlogsSlider;

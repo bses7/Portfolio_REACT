@@ -2,7 +2,7 @@ import BlogsSlider from "../components/blogs_slider";
 
 const Blogs = () => {
   return (
-    <section className="section lg:mt-12 mt-4 min-h-screen" id="blogs">
+    <section className="section lg:mt-12 mt-4 min-h-[600px]" id="blogs">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <div className="relative text-3xl lg:text-8xl font-medium lg:font-extrabold  ">
