@@ -1,6 +1,38 @@
+/*  -------------
+  IMPORTS FOR CONTACT
+    -------------  */
+import { useState } from "react";
 import { contact } from "../data";
 
+/*  -------------
+        CONTACT
+    -------------  */
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    name: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.target.reset();
+    setFormData({
+      email: "",
+      subject: "",
+      name: "",
+      message: "",
+    });
+  };
   return (
     <section className="section min-h-[700px]" id="contact">
       <div className="container mx-auto">
@@ -46,34 +78,49 @@ const Contact = () => {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <form className="space-y-8 w-[90%] mx-auto">
+            <form className="space-y-8 w-[90%] mx-auto" onSubmit={handleSubmit}>
               <div className="flex flex-col lg:flex-row gap-8 ">
                 <input
                   className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 focus:border-teal-500 focus:ring-teal-500 text-center lg:text-left "
                   type="text"
                   placeholder="Your Name"
+                  onChange={handleInputChange}
+                  name="name"
+                  required
                 />
                 <input
                   className="input w-full lg:w-2/3 py-4 placeholder-gray-500 lg:pl-4 lg:text-left text-center"
                   type="email"
                   placeholder="Your Email"
+                  onChange={handleInputChange}
+                  name="email"
+                  required
                 />
               </div>
               <input
                 type="text"
                 className="input w-full py-4 placeholder-gray-500 lg:pl-4 text-center lg:text-left"
                 placeholder="Subject"
+                onChange={handleInputChange}
+                name="subject"
+                required
               />
               <textarea
                 className="textarea w-full py-16 placeholder-gray-500 lg:pl-4 text-center lg:text-left"
                 placeholder="Your Message"
+                onChange={handleInputChange}
+                name="message"
+                required
               ></textarea>
+              <button
+                type="submit"
+                className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md text-xl"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </div>
-        <button className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md text-xl">
-          Send Message
-        </button>
       </div>
     </section>
   );

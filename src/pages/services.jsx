@@ -1,3 +1,6 @@
+/*  -------------
+  IMPORTS FOR SERVICES
+    -------------  */
 import {
   ArrowRightCircleIcon,
   XCircleIcon,
@@ -5,6 +8,10 @@ import {
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { Services_Card } from "../data";
+
+/*  -------------
+      SERVICES
+    -------------  */
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(null);

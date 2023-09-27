@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+/*  -------------
+      SCROLLBAR
+    -------------  */
+
 ::-webkit-scrollbar{
   width:1.2rem;
 }
@@ -59,6 +63,9 @@ html{
   scroll-behavior: smooth;
 }
 
+/*  -------------
+    LIGHT THEME
+    -------------  */
 
 .light-theme{
   --main-heading:#333333 ;
@@ -78,6 +85,11 @@ html{
   --skill-heading:#15295f;
   background:#f1edff;
 }
+
+/*  -------------
+     DARK THEME
+    -------------  */
+
 .dark-theme{
   --main-heading: #F5F5F5;
   --sub-heading:#ebe6ff;
@@ -94,6 +106,7 @@ html{
   --logo-lg:url('./images/logo2.svg');
   --skill-heading:#F5F5F5;
 }
+
 .nav_list{
   color: var(--main-heading);
 }
@@ -136,7 +149,6 @@ html{
   animation: slideUp 0.8s ease forwards 0.9s;
 }
 
-
 .text-wrapper p{
   width: 370px;
   font-weight:  700;
@@ -176,7 +188,6 @@ link a:hover{
 .btn-2{
   background-color: var(--btnh2-bg)
 }
-
 .scroll {
   position:relative;
   transform: translateY(500px);
@@ -264,16 +275,18 @@ link a:hover{
   pointer-events:none;
   z-index:3;
 }
+
 .content h2{
   position:relative; 
   text-align: center;
-  font-size:15px;
+  font-size:18px;
   font-weight:600;
   letter-spacing:2px;
   text-transform: uppercase;
   padding: 10px 0;
   transform: translateY(100px);
 }
+
 .content h2 span{
   display:block;
   font-weight:300;

@@ -1,5 +1,10 @@
+/*  -------------
+  IMPORTS FOR ABOUT
+    -------------  */
+
 import about_divs from "../data";
 import portrait from "../images/portrait.jpg";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -51,9 +56,17 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <button className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md lg:w-1/3 text-xl">
-              Contact Me
-            </button>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <button className="mt-8 mb-8 bg-[#4b9a8f] hover:bg-[#3d8070] transition-all text-white py-4 px-4 rounded-md shadow-md lg:w-full text-xl">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,12 @@
+/*  -------------
+  IMPORTS FOR PORTFOLIO
+    -------------  */
+
 import Projects from "../components/projects";
+
+/*  -------------
+      PORTFOLIO
+    -------------  */
 
 const Portfolio = () => {
   return (

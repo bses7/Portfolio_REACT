@@ -1,4 +1,11 @@
+/*  -------------
+  IMPORTS FOR SKILLS
+    -------------  */
 import { skill_card, softSkillsData } from "../data";
+
+/*  -------------
+        SKILLS
+    -------------  */
 
 const Skills = () => {
   return (

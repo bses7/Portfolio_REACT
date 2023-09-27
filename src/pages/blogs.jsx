@@ -1,4 +1,12 @@
+/*  -------------
+IMPORTS FOR BLOGS SLIDER
+    -------------  */
+
 import BlogsSlider from "../components/blogs_slider";
+
+/*  -------------
+        BLOGS
+    -------------  */
 
 const Blogs = () => {
   return (

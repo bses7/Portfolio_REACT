@@ -1,15 +1,12 @@
+/*  -------------
+ICON IMPORTS AND DATA
+    -------------  */
+
 import {
-  FiYoutube,
   FiInstagram,
   FiGithub,
-  FiDribbble,
-  FiLayout,
-  FiSettings,
-  FiPenTool,
-  FiTag,
   FiMail,
   FiMapPin,
-  FiLinkedin,
   FiTwitter,
   FiPhone,
 } from "react-icons/fi";
@@ -23,6 +20,10 @@ import {
   CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 
+/*  -------------
+  IMAGES FOR PROJECTS
+    -------------  */
+
 import Project1 from "./images/Project1.png";
 import Project2 from "./images/Project2.jpg";
 import Project3 from "./images/Project3.jpg";
@@ -30,9 +31,17 @@ import Project4 from "./images/Project4.jpg";
 import Project5 from "./images/Project5.jpg";
 import Project6 from "./images/Project6.jpg";
 
+/*  -------------
+ IMPORTS FOR BLOGS IMAGES
+    -------------  */
+
 import Blog1 from "./images/Blog1.webp";
 import Blog2 from "./images/Blog2.jpg";
 import Blog3 from "./images/Blog3.jpg";
+
+/*  -------------
+NAVIGATION LINKS DATA
+    -------------  */
 
 export const links = [
   {
@@ -57,6 +66,10 @@ export const links = [
   },
 ];
 
+/*  -------------
+SOCIALS ICONS AND LINKS
+    -------------  */
+
 export const social = [
   {
     icon: <FiInstagram className="w-5 h-5 social" />,
@@ -71,6 +84,10 @@ export const social = [
     href: "https://github.com/bses7",
   },
 ];
+
+/*  -------------
+  ABOUT DIVS DATA
+    -------------  */
 
 const about_divs = [
   {
@@ -93,6 +110,10 @@ const about_divs = [
 ];
 
 export default about_divs;
+
+/*  -------------
+  SKILLS DIVS DATA
+    -------------  */
 
 export const skill_card = [
   {
@@ -137,6 +158,10 @@ export const skill_card = [
   },
 ];
 
+/*  -------------
+  SOFT SKILLS DATA
+    -------------  */
+
 export const softSkillsData = [
   {
     title: "Communication",
@@ -154,6 +179,10 @@ export const softSkillsData = [
     additionalInfo: "Embraces challenges",
   },
 ];
+
+/*  -------------
+  SERVICES DATA CARD
+    -------------  */
 
 export const Services_Card = [
   {
@@ -194,6 +223,10 @@ export const Services_Card = [
   },
 ];
 
+/*  -------------
+  PROJECTS DATA CARD
+    -------------  */
+
 export const projectsData = [
   {
     id: "1",
@@ -233,6 +266,10 @@ export const projectsData = [
   },
 ];
 
+/*    -------------
+DATA FOR PROJECT NAVIGATION 
+      -------------  */
+
 export const projectsNav = [
   {
     name: "all",
@@ -254,6 +291,10 @@ export const projectsNav = [
   },
 ];
 
+/*  -------------
+    BLOGS CARD DATA
+    -------------  */
+
 export const BlogsCard = [
   {
     image: Blog1,
@@ -274,6 +315,10 @@ export const BlogsCard = [
     Blogtitle: "Mobile App Development Best Practices (SAMPLE 3)",
   },
 ];
+
+/*  -------------
+    CONTACT DATA 
+    -------------  */
 
 export const contact = [
   {

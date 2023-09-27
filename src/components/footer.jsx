@@ -1,5 +1,6 @@
 import { FiLogOut } from "react-icons/fi";
 import { social } from "../data";
+import Copyright from "./copyright";
 
 const Footer = () => {
   return (
@@ -22,9 +23,7 @@ const Footer = () => {
           <div>
             <img src={FiLogOut} alt="" />
           </div>
-          <p className="text-[var(--sub-heading)]">
-            &copy; 2023 Bishesh Giri. All rights reserved.
-          </p>
+          <Copyright />
         </div>
       </div>
     </footer>

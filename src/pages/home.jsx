@@ -1,12 +1,26 @@
+/*  -------------
+      HOMEPAGE
+    -------------  */
+
 import { useEffect, useState } from "react";
-import { RocketLaunchIcon } from "@heroicons/react/24/outline";
-import { BriefcaseIcon } from "@heroicons/react/24/outline";
-import port from "../images/port.jpeg";
+import { RocketLaunchIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
+import port from "../images/port.jpg";
 import downloadCV from "../components/cv";
+/*  -------------
+  LINK FOR SCROLLING
+    -------------  */
 import { Link } from "react-scroll";
+
+/*  -------------
+        HOME
+    -------------  */
 
 const Home = () => {
   const [inuse, setInuse] = useState(0);
+
+  /*  -------------
+    CHANGING FIELDS
+    -------------  */
   const field = ["Designer", "Freelancer", "Developer"];
 
   useEffect(() => {
@@ -15,7 +29,7 @@ const Home = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [field.length]);
 
   return (
     <section
@@ -64,7 +78,7 @@ const Home = () => {
                   </Link>
                 </div>
                 <div className="scroll lg:relative absolute animate-slide-up-delayed lg:ml-[-27%] mb-24 ml-16 lg:block hidden md:block">
-                  <a href="#">
+                  <a href="#about">
                     <span className="absolute mb-[-80px] w-30 h-50 ml-[80px] border-2 border-black rounded-full hover:border-[#fff] transition-all duration-400"></span>
                   </a>
                 </div>
@@ -77,14 +91,14 @@ const Home = () => {
                 <img
                   src={port}
                   alt=""
-                  className="absolute top-0 left-0 w-full object-cover h-full bg-cover"
+                  className="absolute top-0 left-0 w-[500px] object-cover h-full bg-cover "
                 />
-                <h2 className="relative text-center text-lg font-semibold uppercase py-10 leading-tight">
+                <h2 className="circ-name relative text-center text-xl font-semibold uppercase py-10 leading-tight">
                   Bishesh
                   <br /> <span></span> "A Canvas of Infinite Imagination"
                 </h2>
                 <a
-                  href="#contact"
+                  href="#skills"
                   className="flex relative bg-[#222] text-white py-2 px-4 rounded-lg text-base font-semibold uppercase"
                 >
                   Hire Me
